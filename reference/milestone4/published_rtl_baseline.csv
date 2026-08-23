@@ -1,0 +1,2 @@
+cycles,icache_accesses,icache_hits,icache_misses,dcache_accesses,dcache_hits,dcache_misses,dcache_writebacks,expected_x5
+1365924,368993,226574,142419,79394,68740,10654,6056,0x003fffff

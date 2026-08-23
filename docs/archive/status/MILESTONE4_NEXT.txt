@@ -1,0 +1,16 @@
+Milestone 4A status
+====================
+
+Directed pipeline/divider/cache/branch/jump rules are calibrated.
+Dhrystone assets are the original project's images.
+
+Source-derived pre-characterization prediction after load->store-data hazard fix:
+  model cycles       = 1,365,938
+  historical RTL     = 1,365,924
+  delta              = +14 cycles (~0.0010%)
+  I$ misses          = 142,419 exact vs historical RTL
+  D$ misses          = 10,654 exact vs historical RTL
+  D$ writebacks      = 6,056 exact vs historical RTL
+
+Do not add a 14-cycle constant. Run the fresh VCS event-counter bundle and use
+scripts/analyze_milestone4_gaps.py to derive a general interaction/overlap rule.

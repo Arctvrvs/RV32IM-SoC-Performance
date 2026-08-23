@@ -1,0 +1,16 @@
+Milestone 3D: JAL/JALR call-return I-cache characterization
+
+Status entering this milestone:
+- M2 pipeline/load-use/branch/divider timing: calibrated
+- M3B I/D-cache + straight-line IF stream: calibrated
+- M3C conditional-branch wrong-path redirects: calibrated
+
+Run on Windows:
+  python scripts/run_milestone3d.py --model-only
+
+Run the matching VCS bundle on Linux, bring back RV32IM_VCS_Milestone3D_Results.zip,
+extract it at this project root, then run:
+  python scripts/run_milestone3d.py --require-rtl
+  python scripts/analyze_jump_fetch.py
+
+Do not tune JAL/JALR before collecting those VCS results.

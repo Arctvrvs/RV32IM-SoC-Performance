@@ -1,0 +1,24 @@
+Milestone 4B - Cache concurrency calibration
+============================================
+
+Milestone 4A established:
+  * architectural trace: exact (193,203 retirements)
+  * I$ misses: exact (142,419)
+  * D$ misses: exact (10,654)
+  * D$ writebacks: exact (6,056)
+  * individual I$ stall cycles: exact (996,933)
+  * individual D$ stall cycles: exact (110,914)
+  * aggregate model timing is 12 cycles high
+
+Fresh RTL counters identified exactly 12 simultaneous `if_stall && mem_stall`
+cycles. The remaining D$ access gap is +2 RTL hits, suspected to be replays
+when D-cache response completes while IF is still stalled.
+
+Run the Milestone 4B VCS overlap probe on Linux, package/extract its results at
+this project root, then run:
+
+  python scripts/analyze_milestone4b_probe.py
+
+Do not patch the C++ model with a Dhrystone-specific -12 constant. The purpose
+of this phase is to identify the exact overlap episodes and encode the general
+pipeline/cache concurrency rule.

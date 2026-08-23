@@ -1,0 +1,20 @@
+NEXT STEP
+=========
+
+1) Keep this Windows project as the SystemC/C++ model side.
+2) Transfer the separate RV32IM_VCS_Validation_Suite.zip to the Linux VCS VM.
+3) On the VM run:
+
+   python3 scripts/run_vcs_validation.py
+
+4) Even if the script reports a timing FAIL, do not change anything yet. It still runs all tests and writes the data.
+5) Package the VM results:
+
+   python3 scripts/package_validation_results.py
+
+6) Transfer RV32IM_VCS_Validation_Results.zip back to Windows and extract it at this project root.
+7) Run:
+
+   python scripts/run_validation_suite.py --require-rtl
+
+The divider test is MEASURE-only. Its timing mismatch is expected until we calibrate the 8-stage divider model.

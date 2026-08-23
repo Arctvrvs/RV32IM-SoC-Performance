@@ -1,0 +1,8 @@
+00000000: 010000ef  jal x1,+16          # call func @0x10; ra=0x04
+00000004: 00200113  addi x2,x0,2        # resumes here after return
+00000008: 0140006f  jal x0,+20          # skip function body -> ecall @0x1c
+0000000c: 00700393  addi x7,x0,7        # wrong/unreached
+00000010: 00300193  addi x3,x0,3        # func
+00000014: 00008067  jalr x0,x1,0       # return -> 0x04
+00000018: 00800413  addi x8,x0,8        # wrong path after return
+0000001c: 00000073  ecall

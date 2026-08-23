@@ -1,0 +1,41 @@
+# CMake and compiler outputs
+/build/
+/cmake-build-*/
+/out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.exe
+*.ilk
+*.pdb
+
+# IDE and editor state
+/.idea/
+/.vscode/
+*.iml
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Generated traces, EDA reports, netlists, and physical-design work products.
+# Curated public evidence lives under docs/results and docs/assets.
+/results/
+
+# Locally packaged result bundles
+/*.zip
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini

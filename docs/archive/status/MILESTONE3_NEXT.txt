@@ -1,0 +1,8 @@
+Milestone 3A:
+- direct-mapped cache model added
+- D-cache write-back/write-allocate modeled
+- AXI-Lite LATENCY-dependent miss penalties modeled
+- D-cache directed predictions ready for VCS validation
+- I-cache architectural-PC proxy ready for VCS characterization
+
+Next: run Windows model-only suite, then the Linux VCS cache-characterization bundle.

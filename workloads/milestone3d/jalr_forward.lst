@@ -1,0 +1,6 @@
+00000000: 01000293  addi x5,x0,16      # target address
+00000004: 000280e7  jalr x1,x5,0       # -> 0x10; x1=0x08
+00000008: 02200113  addi x2,x0,0x22     # wrong path
+0000000c: 03300193  addi x3,x0,0x33     # wrong path
+00000010: 00400213  addi x4,x0,4        # target
+00000014: 00000073  ecall

@@ -1,0 +1,10 @@
+Milestone 3C calibrated redirect-aware I-cache model
+
+Rule: taken conditional branch => fetch PC+4 and PC+8 before EX redirect, then restart IF at target.
+Expected directed validation:
+  branch_not_taken      66 cycles,  8 I$ misses
+  branch_taken_forward  74 cycles,  9 I$ misses
+  branch_backward_loop  74 cycles,  8 I$ misses, 18 accesses / 10 hits
+  branch_conflict_loop 188 cycles, 23 I$ misses, 27 accesses / 4 hits
+
+Next characterization before Dhrystone: JAL/JALR redirect behavior.

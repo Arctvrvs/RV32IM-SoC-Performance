@@ -1,0 +1,14 @@
+RV32IM Milestone 2 fixed bundle
+
+Fixes included:
+- main.cpp is included (previous bundle accidentally omitted it).
+- --rtl-trace is now a supported command-line option.
+- PipelineTimingModel is wired into CpuModel execution.
+- Model retirement cycles are predicted analytically, not copied from RTL.
+- Smoke model retirement cycles: 5,6,7,8,9,10,11,13,16,17.
+- Aggregate model result: 17 cycles, CPI 1.7000.
+- RTL comparison result: 17 cycles, CPI 1.7000, 0.00% error.
+- compare_traces.py --compare-cycle passes exactly on the supplied VCS trace.
+
+Validated with:
+  python3 scripts/run_milestone2.py

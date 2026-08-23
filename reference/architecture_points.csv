@@ -1,0 +1,4 @@
+case,icache_lines,dcache_lines,dhrystone_cycles,best_met_period_ns,fmax_mhz,m7b_area,wallclock_speedup_vs_base
+BASE_64_64,64,64,1365926,6.71875,148.8372093,140299.7,1.000000
+EFF_256_64,256,64,715815,6.875,145.4545455,242419.9,1.864846
+PERF_512_64,512,64,373403,6.71875,148.8372093,375494.4,3.658050

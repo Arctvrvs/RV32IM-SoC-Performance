@@ -1,0 +1,2 @@
+alu,axi_reads,axi_writes,base_cycles,branch_stalls,branches,branches_taken,cache_overlap_cycles,cycles,dcache_accesses,dcache_hits,dcache_misses,dcache_stalls,dcache_writebacks,divider_stalls,fill_drain,icache_accesses,icache_hits,icache_misses,icache_stalls,jump_stalls,jumps,load_use_stalls,loads,mext,net_cache_stalls,retired,stores,x5
+68981,153073,6056,193203,27308,28293,13654,12,1365926,79394,68740,10654,110914,6056,3500,4,368993,226574,142419,996933,31072,15536,3004,49783,1000,1107835,193203,29609,4194303

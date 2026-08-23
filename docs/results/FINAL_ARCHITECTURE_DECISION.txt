@@ -1,0 +1,38 @@
+M9I FINAL ARCHITECTURE DECISION
+===============================
+
+Validated architectures
+-----------------------
+BASE_64_64
+  SRAM-backed Dhrystone cycles : 1,549,396
+  Hard SRAM macros             : 4
+  Innovus core area            : 447,300 um^2 (0.4473 mm^2)
+  Cycle speedup vs BASE        : 1.000x
+  Equal-clock perf/area        : 1.000x
+
+EFF_256_64
+  SRAM-backed Dhrystone cycles : 992,158
+  Hard SRAM macros             : 6
+  Innovus core area            : 665,587 um^2 (0.6656 mm^2)
+  Cycle speedup vs BASE        : 1.562x
+  Equal-clock perf/area        : 1.049x
+
+PERF_512_64
+  SRAM-backed Dhrystone cycles : 698,662
+  Hard SRAM macros             : 10
+  Innovus core area            : 1,049,692 um^2 (1.0497 mm^2)
+  Cycle speedup vs BASE        : 2.218x
+  Equal-clock perf/area        : 0.945x
+
+Decision
+--------
+- Minimum physical area: BASE_64_64
+- Minimum benchmark cycles: PERF_512_64
+- Best equal-clock performance per physical core area: EFF_256_64
+- Balanced physical architecture recommendation: EFF_256_64
+- Performance-first recommendation when area is secondary: PERF_512_64
+
+Timing limitation
+-----------------
+No SRAM-aware Fmax or wall-clock performance claim is made. The physically
+matched RAM2P_128x16 Liberty contains placeholder 999-ns clock-to-Q values.

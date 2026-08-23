@@ -1,0 +1,24 @@
+Milestone 2.6 - Divider Characterization
+=======================================
+
+1) On Windows, freeze the pre-calibration model traces:
+
+   python scripts/run_divider_characterization.py --model-only
+
+2) Transfer the separate VCS divider-characterization ZIP to the Linux VM.
+
+3) On the VM:
+
+   python3 scripts/run_vcs_divider_characterization.py
+   python3 scripts/package_divider_characterization_results.py
+
+4) Bring RV32IM_VCS_Divider_Characterization_Results.zip back to Windows and
+   extract it at this project root.
+
+5) On Windows:
+
+   python scripts/run_divider_characterization.py --require-rtl
+
+Do not calibrate divider timing until all five RTL retirement patterns have
+been captured. The idle-gap test determines whether a second startup penalty
+is required after the divider pipeline drains.

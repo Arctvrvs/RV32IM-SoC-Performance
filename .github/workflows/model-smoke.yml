@@ -1,0 +1,27 @@
+name: Model smoke test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-and-smoke:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Configure
+        run: cmake -S . -B build -DRV32IM_BUILD_SYSTEMC=OFF -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build
+        run: cmake --build build --parallel
+
+      - name: Run smoke workload
+        run: |
+          mkdir -p results
+          ./build/rv32im_model workloads/smoke.hex --trace results/model_trace.csv --dump-regs
+
+      - name: Analyze trace
+        run: python3 scripts/analyze_trace.py results/model_trace.csv

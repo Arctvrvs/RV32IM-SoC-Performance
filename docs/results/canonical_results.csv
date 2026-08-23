@@ -1,0 +1,35 @@
+category,configuration,metric,value,unit,scope
+baseline,ORIGINAL_64_64,cycles,1365926,cycles,combinational-array RTL baseline
+baseline,ORIGINAL_64_64,retired,193203,instructions,canonical Dhrystone
+baseline,ORIGINAL_64_64,x5_signature,0x003fffff,hex,canonical Dhrystone
+cache,ORIGINAL_64_64,icache_misses,142419,misses,canonical Dhrystone
+cache,ORIGINAL_64_64,dcache_misses,10654,misses,canonical Dhrystone
+cache,ORIGINAL_64_64,dcache_writebacks,6056,writebacks,canonical Dhrystone
+m6,BASE_L1,cycles,1047672,cycles,I64 D64 L1
+m6,BASE_L5,cycles,1684180,cycles,I64 D64 L5
+m6,EFF_L2,cycles,649561,cycles,I256 D64 L2
+m6,EFF_D256_L5,cycles,748359,cycles,I256 D256 L5
+m7b,BASE_64_64,target_period,6.7188,ns,pre-layout synthesis boundary
+m7b,BASE_64_64,freq_proxy,148.8,MHz,pre-layout synthesis boundary
+m7b,BASE_64_64,area,140299.7,liberty_area,standard-cell arrays
+m7b,EFF_256_64,target_period,6.8750,ns,pre-layout synthesis boundary
+m7b,EFF_256_64,freq_proxy,145.5,MHz,pre-layout synthesis boundary
+m7b,EFF_256_64,area,242419.9,liberty_area,standard-cell arrays
+m7b,PERF_512_64,target_period,6.7188,ns,pre-layout synthesis boundary
+m7b,PERF_512_64,freq_proxy,148.8,MHz,pre-layout synthesis boundary
+m7b,PERF_512_64,area,375494.4,liberty_area,standard-cell arrays
+m8b,BASE_64_64,total_power,5.867610,mW,pre-layout activity-based estimate
+m8b,BASE_64_64,energy,53848.907,nJ,pre-layout activity-based estimate
+m8b,EFF_256_64,total_power,8.832030,mW,pre-layout activity-based estimate
+m8b,EFF_256_64,energy,43464.434,nJ,pre-layout activity-based estimate
+m8b,PERF_512_64,total_power,13.699400,mW,pre-layout activity-based estimate
+m8b,PERF_512_64,energy,34369.074,nJ,pre-layout activity-based estimate
+m9,sram_BASE_64_64,cycles,1549396,cycles,synchronous hard-SRAM architecture
+m9,sram_BASE_64_64,ram_macros,4,macros,RAM2P_128x16
+m9,sram_BASE_64_64,core_area,0.4473,mm2,Innovus physical floorplan
+m9,sram_EFF_256_64,cycles,992158,cycles,synchronous hard-SRAM architecture
+m9,sram_EFF_256_64,ram_macros,6,macros,RAM2P_128x16
+m9,sram_EFF_256_64,core_area,0.6656,mm2,Innovus physical floorplan
+m9,sram_PERF_512_64,cycles,698662,cycles,synchronous hard-SRAM architecture
+m9,sram_PERF_512_64,ram_macros,10,macros,RAM2P_128x16
+m9,sram_PERF_512_64,core_area,1.0497,mm2,Innovus physical floorplan

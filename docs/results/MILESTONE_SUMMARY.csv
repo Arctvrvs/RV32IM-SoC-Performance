@@ -1,0 +1,16 @@
+milestone,scope,status
+M1-M3D,Functional and directed cycle correlation,PASS
+M4A-M4B,Full Dhrystone correlation,PASS
+M5-M6,Cache and memory-latency sensitivity,PASS
+M7A-M7B,Pre-layout Genus area and target-period study,PASS
+M8A-M8C,SAIF power and standard-cell architecture selection,PASS
+M9A-M9C,SRAM collateral discovery and exact-corner macro link,PASS
+M9D,Synchronous SRAM cache architecture,PASS
+M9E-A,Mapped macro interface and leaf preservation,PASS
+M9E-B,Explicit SRAM-bank RTL integration,PASS
+M9F,SRAM-aware Fmax,CLOSED_LIMITATION
+M9G-A,Innovus macro import,PASS
+M9G-B,Physical macro floorplan and placement,PASS
+M9H,Physical cycle-vs-area architecture selection,PASS
+M9I,SRAM branch final evidence package,PASS
+M10,Overall final project integration,PASS

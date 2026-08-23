@@ -1,0 +1,17 @@
+Milestone 2 calibrated timing model
+===================================
+
+Calibrated configuration:
+  pipeline depth              = 5
+  load-use penalty            = 1 cycle
+  taken branch penalty        = 2 cycles
+  DIV/REM pipeline latency    = 8 cycles
+  DIV/REM initiation interval = 1 cycle
+
+After copying your previously generated RTL validation traces into results/:
+
+  python scripts/run_milestone2_complete.py
+
+Expected: all collected architectural and retirement-cycle comparisons PASS.
+
+Next: Milestone 3 - I-cache, D-cache, and memory hierarchy performance correlation.

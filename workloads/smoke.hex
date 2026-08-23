@@ -1,0 +1,13 @@
+# RV32IM smoke test. One 32-bit little-endian instruction word per line.
+# Expected end state: x3=12, x4=35, x5=35, x6=2, memory[0x100]=35.
+00500093
+00700113
+002081b3
+02208233
+10000513
+00452023
+00052283
+00428463
+00100313
+00200313
+00000073

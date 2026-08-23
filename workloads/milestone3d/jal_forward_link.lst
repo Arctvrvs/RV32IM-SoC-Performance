@@ -1,0 +1,5 @@
+00000000: 00c000ef  jal x1,+12          # -> 0x0c; x1=0x04
+00000004: 05500113  addi x2,x0,0x55     # wrong path
+00000008: 06600193  addi x3,x0,0x66     # wrong path
+0000000c: 00400213  addi x4,x0,4        # target
+00000010: 00000073  ecall
