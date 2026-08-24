@@ -16,6 +16,22 @@ A cycle-correlated RV32IM performance engineering framework spanning functional 
 - Dhrystone-driven cache, memory-latency, synthesis, power, SRAM, and physical-area studies.
 - Optional SystemC clocked wrapper around the C++ model.
 
+## Related RTL implementation
+
+This performance framework is built around and correlated against my separate
+RV32IM processor implementation:
+
+**[RV32IM Pipelined CPU with AXI4-Lite](https://github.com/Arctvrvs/RV32IM-Pipelined-CPU-with-AXI4-Lite)**
+
+The companion RTL repository contains the synthesizable Verilog/SystemVerilog
+processor implementation, 5-stage pipeline microarchitecture, RV32IM execution
+units, hazard and forwarding logic, AXI4-Lite memory subsystem, verification
+environment, and detailed architecture diagrams.
+
+Together, the two repositories cover the path from **RTL implementation and
+verification** to **cycle-accurate performance modeling, RTL correlation,
+architecture exploration, synthesis, and physical implementation**.
+
 ## Headline result
 
 The combinational-array RTL baseline was correlated exactly on the canonical Dhrystone workload:
