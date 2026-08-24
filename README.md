@@ -219,6 +219,9 @@ More detailed workflows are in [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md
 
 ## Scope and limitations
 
-This repository contains the C++/SystemC model, trace collector, workloads, analysis tooling, and curated evidence. The complete upstream CPU RTL and proprietary PDK/EDA collateral used for VCS, Genus, and Innovus runs are not redistributed here.
+This repository contains the C++/SystemC model, trace collector, workloads, analysis tooling, and curated evidence. The complete proprietary PDK/EDA collateral used for VCS, Genus, and Innovus runs are not redistributed here. The complete processor RTL is maintained in the companion
+[RV32IM Pipelined CPU with AXI4-Lite](https://github.com/Arctvrvs/RV32IM-Pipelined-CPU-with-AXI4-Lite)
+repository to keep the RTL implementation and performance-analysis projects
+focused independently.
 
 The hard-SRAM study intentionally does **not** claim SRAM-aware Fmax, wall-clock speedup, routed timing, or signoff PPA. The physically matched SRAM Liberty contains placeholder 999 ns clock-to-Q values, so the defensible physical comparison is equal-clock cycle performance per placed core area.
